@@ -15,14 +15,14 @@ import ImageBackground from "../ImageBackground";
 export default function Customers() {
     return (
         <s.customers>
-            <ImageBackground width={"200%"} />
+            <ImageBackground selectedImg={1} top={"13%"} left={"-50%"} width={"200%"} />
             <s.horizontalPadding>
                 <t.h1 textAlign={"center"}>
                     Nossos <span>clientes</span>
                 </t.h1>
             </s.horizontalPadding>
             <s.swiperWrapper>
-                <Swiper spaceBetween={50} slidesPerView={3} autoplay={{ delay: 0, disableOnInteraction: false }} speed={2000} loop={true} freeMode={true} modules={[Autoplay, FreeMode]}>
+                <Swiper spaceBetween={50} slidesPerView={4} breakpoints={{1199:{slidesPerView: 4}}} autoplay={{ delay: 0, disableOnInteraction: false }} speed={2000} loop={true} freeMode={true} modules={[Autoplay, FreeMode]}>
                     <SwiperSlide>
                         <StaticImage src="../../images/c1.png" />
                     </SwiperSlide>
@@ -38,7 +38,7 @@ export default function Customers() {
                 </Swiper>
             </s.swiperWrapper>
             <s.swiperWrapper>
-                <Swiper spaceBetween={50} slidesPerView={3} autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true }} speed={2000} loop={true} loopAdditionalSlides={10} freeMode={true} modules={[Autoplay, FreeMode]}>
+                <Swiper spaceBetween={50} slidesPerView={4} breakpoints={{1199:{slidesPerView: 4}}} autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true }} speed={2000} loop={true} loopAdditionalSlides={10} freeMode={true} modules={[Autoplay, FreeMode]}>
                     <SwiperSlide>
                         <StaticImage src="../../images/c1.png" />
                     </SwiperSlide>

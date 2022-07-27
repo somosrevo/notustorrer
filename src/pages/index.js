@@ -1,18 +1,28 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import Hero from "../components/Hero"
+import * as React from "react";
+import { Link } from "gatsby";
 
-import '../styles/global.css'
-import Customers from "../components/Customers"
+import "../styles/global.css";
+import Hero from "../components/Hero";
+import Layout from "../components/Layout";
+import Customers from "../components/Customers";
+import Differential from "../components/Differential";
+import ServicesHome from "../components/ServicesHome";
+import About from "../components/About";
 
 // index page
 const IndexPage = () => {
-  return (
-    <main>
-      <Hero/>
-      <Customers/>
-    </main>
-  )
-}
+    const colorChanger = true
+    return (
+        <main>
+            <Layout colorChanger={colorChanger} >
+                <Hero />
+                <Customers />
+                <Differential />
+                <ServicesHome />
+                <About />
+            </Layout>
+        </main>
+    );
+};
 
-export default IndexPage
+export default IndexPage;

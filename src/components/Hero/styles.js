@@ -21,8 +21,9 @@ export const heroTitle = styled.div`
     display: flex;
     align-items: center;
     padding: 1rem;
+    justify-content: center;
 
     h1{
-        text-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+        text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
     }
 `
