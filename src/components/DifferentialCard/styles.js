@@ -27,9 +27,8 @@ export const cardBg = styled.div`
 export const cardPanel = styled.div`
     padding: 2rem 1rem;
     border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7 );
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    backdrop-filter: blur(40px);
 `;
 export const styleIcon = styled.div`
     position: absolute;
