@@ -34,7 +34,7 @@ export default function ServiceBox(props){
         }
     }
     return(
-        <s.serviceBox>
+        <s.serviceBox id={props.id} >
             {imgSelect()}
             <div>
                 <t.h3 weight="600" dangerouslySetInnerHTML={{__html: props.title}} ></t.h3>
