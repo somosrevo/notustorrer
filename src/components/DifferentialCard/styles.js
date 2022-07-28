@@ -6,7 +6,11 @@ export const cardWrapper = styled.div`
     width: 265px;
     padding: 16rem 1rem  1rem;
     margin-right: -10px !important;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;    
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+    a{
+        text-decoration: none;
+    }
 `;
 
 export const cardBg = styled.div`
@@ -27,8 +31,10 @@ export const cardBg = styled.div`
 export const cardPanel = styled.div`
     padding: 2rem 1rem;
     border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.7 );
+    background: rgba(255, 255, 255, 0.5 );
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    min-height: 150px;
+    backdrop-filter: blur(8px);
 `;
 export const styleIcon = styled.div`
     position: absolute;
