@@ -31,3 +31,16 @@ export const toggleSidebarBtn = styled.div`
     border: 1px solid #fff;
     border-radius: 8px;
 `
+
+export const gridHeader = styled.div`
+    display: none;
+
+    @media (min-width: 1200px){
+        display: flex;
+        gap: 1rem;
+
+        a{
+            text-decoration: none;
+        }
+    }
+`
