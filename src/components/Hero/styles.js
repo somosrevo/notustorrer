@@ -29,13 +29,14 @@ export const heroTitle = styled.div`
 `;
 
 export const heroLogo = styled.div`
-    display: none;
-
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    
     @media (min-width: 1200px) {
-        display: block;
-        position: absolute;
         bottom: 20%;
-        left: 50%;
-        transform: translateX(-50%);
+        
     }
 `;
