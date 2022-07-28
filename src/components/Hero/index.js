@@ -13,9 +13,6 @@ export default function Hero(){
                 <s.heroTitle>
                     <t.h1 textAlign={"center"} color={"#fff"} >Fornecimento<br/>de Estações Anemométricas</t.h1>
                 </s.heroTitle>
-                <s.heroLogo>
-                    <StaticImage src='../../images/notustorreslogo.png' height={200} />
-                </s.heroLogo>
             </s.imgBackground>
         </s.heroWrapper>
     )
