@@ -1,7 +1,6 @@
 import React from "react";
 
 import * as s from "./styles";
-import * as t from "../fontStyles";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -27,7 +26,8 @@ export default function Header(props) {
                 <s.toggleSidebarBtn onClick={props.onClick}>
                     <GiHamburgerMenu color="#fff" size={24} />
                 </s.toggleSidebarBtn>
-                <StaticImage src="../../images/notustorrebranco.png" />
+                
+                <StaticImage src="../../images/notustorrebranco.png" height={60} />
             </s.headerBody>
         </s.headerWrapper>
     );

@@ -39,7 +39,7 @@ export default function Sidebar(props) {
                 </s.closeIcon>
                 <s.sidebarBody>
                     <s.logoSidebar>
-                        <StaticImage src="../../images/notustorreslogo.png" />
+                        <StaticImage src="../../images/notustorreslogo.png" height={160} />
                     </s.logoSidebar>
 
                     {array.map((array) => (
