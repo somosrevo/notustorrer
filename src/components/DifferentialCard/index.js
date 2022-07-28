@@ -42,7 +42,7 @@ export default function DifferentialCard(props) {
                     <BsCheckCircleFill size={40} color="#27AE60" />
                 </s.styleIcon>
                 <s.cardPanel>
-                    <t.h5 weight={600}>{props.title}</t.h5>
+                    <t.h5 mgBottom={"0"} weight={600}>{props.title}</t.h5>
                 </s.cardPanel>
             </Link>
         </s.cardWrapper>
