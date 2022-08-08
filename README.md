@@ -8,7 +8,7 @@
 </h1>
 
 ## 🚀 Quick start
-
+##[![Netlify Status](https://api.netlify.com/api/v1/badges/11ecb338-7d61-4a32-b3eb-adbbe55acbf8/deploy-status)](https://app.netlify.com/sites/notustorres/deploys)
 1.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the minimal starter.
