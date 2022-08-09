@@ -3,6 +3,7 @@ import React from "react";
 import * as s from "./styles";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { StaticImage } from "gatsby-plugin-image";
+import i18n from "../../i18n";
 
 export default function Header(props) {
     const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -20,6 +21,11 @@ export default function Header(props) {
         };
     }, [scrollPosition]);
 
+    const onChange = (e) => {
+        console.log(e.target.value)
+        i18n.changeLanguage(e.target.value)
+    }
+
     return (
         <s.headerWrapper colorChanger={props.colorChanger} scrollPosition={scrollPosition}>
             <s.headerBody>
@@ -28,6 +34,10 @@ export default function Header(props) {
                 </s.toggleSidebarBtn>
                 
                 <StaticImage src="../../images/notustorrebranco.png" height={60} />
+                <select name="language" onChange={onChange} >
+                    <option value="pt-br">Português</option>
+                    <option value="en-us" >Inglês</option>
+                </select>
             </s.headerBody>
         </s.headerWrapper>
     );
