@@ -6,7 +6,7 @@ import * as s from "./styles";
 export default function ImageBackground(props) {
 
     const selectImg = () => {
-        if (props.selectedImg == 1) {
+        if (props.selectedImg === 1) {
             return <StaticImage src="../../images/transparentbg.png" />
         } else {
             return <StaticImage src="../../images/transparentbg2.png" />

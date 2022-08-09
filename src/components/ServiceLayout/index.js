@@ -3,7 +3,6 @@ import React from "react";
 import * as s from './styles'
 import * as t from '../fontStyles'
 import ServiceBox from "../ServiceBox";
-import Img from 'gatsby-plugin-image'
 
 export default function ServiceLayout(){
     const services = [

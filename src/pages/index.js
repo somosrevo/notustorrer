@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 
 import "../styles/global.css";
 import Hero from "../components/Hero";
