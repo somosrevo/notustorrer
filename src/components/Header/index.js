@@ -6,6 +6,25 @@ import { StaticImage } from "gatsby-plugin-image";
 import i18n from "../../i18n";
 
 export default function Header(props) {
+    const array = [
+        {   
+            link: "/",
+            nome: "Home",
+        },
+        {
+            link: "/about",
+            nome: "Sobre nós",
+        },
+        {
+            link: "/services",
+            nome: "Serviços",
+        },
+        {
+            link: "/",
+            nome: "Contato",
+        }
+    ]
+
     const [scrollPosition, setScrollPosition] = React.useState(0);
     const handleScroll = () => {
         const position = window.scrollY;
@@ -32,7 +51,13 @@ export default function Header(props) {
                 <s.toggleSidebarBtn onClick={props.onClick}>
                     <GiHamburgerMenu color="#fff" size={24} />
                 </s.toggleSidebarBtn>
-                
+                <s.gridHeader>
+                    {array.map((page) => (
+                        <Link to={page.link} >
+                            <t.p color="#fff" mgBottom={"0"} > {page.nome} </t.p>
+                        </Link>
+                    ))}
+                </s.gridHeader>
                 <StaticImage src="../../images/notustorrebranco.png" height={60} />
                 <select name="language" onChange={onChange} >
                     <option value="pt-br">Português</option>

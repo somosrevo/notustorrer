@@ -4,16 +4,16 @@ export const heroWrapper = styled.section`
     position: relative;
     height: 100vh;
     width: 100%;
-`
+`;
 
 export const imgBackground = styled.div`
     position: absolute;
     inset: 0;
-    
-    .gatsby-image-wrapper{
+
+    .gatsby-image-wrapper {
         height: 100%;
     }
-`
+`;
 
 export const heroTitle = styled.div`
     position: absolute;
@@ -23,7 +23,20 @@ export const heroTitle = styled.div`
     padding: 1rem;
     justify-content: center;
 
-    h1{
+    h1 {
         text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
     }
-`
+`;
+
+export const heroLogo = styled.div`
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    
+    @media (min-width: 1200px) {
+        bottom: 20%;
+        
+    }
+`;

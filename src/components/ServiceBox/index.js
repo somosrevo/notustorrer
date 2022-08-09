@@ -9,16 +9,16 @@ export default function ServiceBox(props){
     function imgSelect(){
         switch (props.idImg) {
             case 1:
-                return <StaticImage src="../../images/services/anemometrica.jpg" />
+                return <StaticImage src="../../images/services/wpp5.jpeg" />
         
             case 2:
-                return <StaticImage src="../../images/services/solar.jpg" />
+                return <StaticImage src="../../images/services/wpp1.jpeg" />
             
             case 3:
-                return <StaticImage src="../../images/services/tower.jpg" />
+                return <StaticImage src="../../images/services/wpp4.jpeg" />
             
             case 4:
-                return <StaticImage src="../../images/services/instrumentacao.jpg" />
+                return <StaticImage src="../../images/services/wpp2.jpeg" />
 
             case 5:
                 return <StaticImage src="../../images/services/maintence.jpg" />

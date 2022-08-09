@@ -10,11 +10,13 @@ export default function Hero(){
     return(
         <s.heroWrapper>
             <s.imgBackground>
-                {/* <StaticImage src='../../images/hero.jpg'/> */}
                 <StaticImage src='../../images/hero2.jpg'/>
                 <s.heroTitle>
                     <t.h1 textAlign={"center"} color={"#fff"} >{merda.t('hero')}</t.h1>
                 </s.heroTitle>
+                <s.heroLogo>
+                    <StaticImage src='../../images/notustorreslogo.png' height={200} />
+                </s.heroLogo>
             </s.imgBackground>
         </s.heroWrapper>
     )
