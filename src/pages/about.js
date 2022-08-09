@@ -1,6 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
-import Footer from "../components/Footer";
 import AboutText from "../components/AboutText";
 import Differential from "../components/Differential";
 import Partners from "../components/Partners";

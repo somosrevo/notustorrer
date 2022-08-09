@@ -4,21 +4,23 @@ import * as s from "./styles";
 import * as t from "../fontStyles";
 import { StaticImage } from "gatsby-plugin-image";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import {useTranslation} from 'react-i18next'
 
 export default function Footer() {
+    const translator = useTranslation()
     return (
         <s.footerWrapper>
             <s.footerLogo>
                 <StaticImage src="../../images/notustorrebranco.png" height={60} />
             </s.footerLogo>
             <t.h3 color={"#fff"} mgBottom={"1rem"}>
-                Nossos contatos
+                {translator.t('Nossos contatos')}
             </t.h3>
 
             <s.footerGrid>
                 <div>
                     <t.h5 color={"#fff"} weight={"700"}>
-                        Endereço
+                        {translator.t('Endereço')}
                     </t.h5>
                     <t.p color={"#fff"} mgBottom={"3rem"}>
                         R. José Cândido de Oliveira, 51 - Jacundá, Aquiraz - CE, 61700-000
@@ -26,7 +28,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <t.h5 color={"#fff"} weight={"700"}>
-                        Telefone
+                        {translator.t('Telefone')}
                     </t.h5>
                     <t.p color={"#fff"} mgBottom={"3rem"}>
                         +55 85 3393.5680
@@ -42,7 +44,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <t.h5 color={"#fff"} weight={"700"}>
-                        Redes Sociais
+                        {translator.t('Redes Sociais')}
                     </t.h5>
                     <s.iconsWrapper>
                         <BsInstagram color="#fff" size={40} />

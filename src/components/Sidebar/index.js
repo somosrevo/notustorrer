@@ -5,6 +5,8 @@ import ImageBackground from '../ImageBackground'
 import { Link } from "gatsby";
 import * as s from "./styles";
 import * as t from "../fontStyles";
+import i18n from "../../i18n";
+import {useTranslation} from 'react-i18next'
 
 export default function Sidebar(props) {
     const array = [
@@ -29,6 +31,17 @@ export default function Sidebar(props) {
             icon: <BsFillTelephoneFill size={20} color={"#444"} />
         }
     ]
+
+    const [choosedLang, setChoosedLang] = React.useState("pt-br");
+
+    const onChange = (e) => {
+        localStorage.setItem("choosedLang", e.target.value);
+        setChoosedLang(localStorage.getItem("choosedLang"));
+        i18n.changeLanguage(localStorage.getItem("choosedLang"));
+    };
+
+    const translator = useTranslation()
+
     return (
         <>
             <s.sidebarOverlay showSidebar={props.showSidebar} onClick={props.onClick} />
@@ -46,10 +59,18 @@ export default function Sidebar(props) {
                         <s.sidebarLink>
                         <Link to={array.link}>
                             {array.icon}
-                            <t.h5 mgBottom={"0"} >{array.nome}</t.h5>
+                            <t.h5 mgBottom={"0"} >{translator.t(array.nome)}</t.h5>
                         </Link>
                     </s.sidebarLink>
                     ))}
+
+                    <s.lngWrapper>
+                        <t.h5>{translator.t('Idioma')}</t.h5>
+                        <s.selectLng name="language" onChange={onChange}>
+                            <option value="pt-br">Português</option>
+                            <option value="en-us">Inglês</option>
+                        </s.selectLng>
+                    </s.lngWrapper>
                 </s.sidebarBody>
             </s.sidebarWrapper>
         </>

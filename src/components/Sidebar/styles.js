@@ -54,3 +54,15 @@ export const sidebarLink = styled.div`
         align-items: center;
     }
 `;
+
+export const lngWrapper = styled.div`
+    margin-top: 3rem;
+`
+
+export const selectLng = styled.select`
+    border: none;
+    border-radius: 5px;
+    background: #0000000d;
+    width: 100%;
+    padding: 1rem 1rem;
+`

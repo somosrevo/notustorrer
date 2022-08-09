@@ -3,6 +3,7 @@ import React from "react";
 import * as s from './styles'
 import * as t from '../fontStyles'
 import { StaticImage } from "gatsby-plugin-image";
+import {useTranslation, Trans} from 'react-i18next'
 
 export default function ServiceBox(props){
 
@@ -33,12 +34,17 @@ export default function ServiceBox(props){
                 return  <StaticImage src="../../images/services/cert.jpg" />
         }
     }
+
+    const translator = useTranslation()
+
     return(
         <s.serviceBox id={props.id} >
             {imgSelect()}
             <div>
-                <t.h3 weight="600" dangerouslySetInnerHTML={{__html: props.title}} ></t.h3>
-                <t.p>{props.description}</t.p>
+                <t.h3 weight="600">
+                    <Trans components={{span: <span/>}} >{props.title}</Trans>
+                </t.h3>
+                <t.p>{translator.t(props.description)}</t.p>
             </div>
         </s.serviceBox>
     )

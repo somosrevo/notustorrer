@@ -5,8 +5,10 @@ import * as t from "../fontStyles";
 import { StaticImage } from "gatsby-plugin-image";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "gatsby";
+import {useTranslation, Trans} from 'react-i18next'
 
 export default function About() {
+    const translator = useTranslation()
     return (
         <s.aboutWrapper>
             <s.horizontalPadding>
@@ -14,12 +16,14 @@ export default function About() {
                     <StaticImage src="../../images/aboutimg.png" />
                     <div>
                         <t.h1>
-                            Sobre <span>nós</span>
+                            <Trans components={{span: <span/>}} >Sobre nos</Trans>
                         </t.h1>
-                        <t.p>A Nótus Torres procura desenvolver suas atividades de acordo com as melhores práticas do mercado. Foram desenvolvidos procedimentos padrões para todos os serviços que nossas equipes executarão.</t.p>
+                        <t.p>
+                            {translator.t('A Nótus Torres procura desenvolver suas atividades de acordo com as melhores práticas do mercado. Foram desenvolvidos procedimentos padrões para todos os serviços que nossas equipes executarão.')}
+                        </t.p>
                         <s.linkBtn>
                             <Link to="/about">
-                                <t.p>Saiba mais sobre nós</t.p>
+                                <t.p>{translator.t('Saiba mais sobre nós')}</t.p>
                                 <BsArrowRight color="#00ADF2" size={20} />
                             </Link>
                         </s.linkBtn>
