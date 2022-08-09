@@ -5,6 +5,7 @@ import ImageBackground from '../ImageBackground'
 import { Link } from "gatsby";
 import * as s from "./styles";
 import * as t from "../fontStyles";
+import i18n from "../../i18n";
 import {useTranslation} from 'react-i18next'
 
 export default function Sidebar(props) {
@@ -31,6 +32,14 @@ export default function Sidebar(props) {
         }
     ]
 
+    const [choosedLang, setChoosedLang] = React.useState("pt-br");
+
+    const onChange = (e) => {
+        localStorage.setItem("choosedLang", e.target.value);
+        setChoosedLang(localStorage.getItem("choosedLang"));
+        i18n.changeLanguage(localStorage.getItem("choosedLang"));
+    };
+
     const translator = useTranslation()
 
     return (
@@ -54,6 +63,14 @@ export default function Sidebar(props) {
                         </Link>
                     </s.sidebarLink>
                     ))}
+
+                    <s.lngWrapper>
+                        <t.h5>{translator.t('Idioma')}</t.h5>
+                        <s.selectLng name="language" onChange={onChange}>
+                            <option value="pt-br">Português</option>
+                            <option value="en-us">Inglês</option>
+                        </s.selectLng>
+                    </s.lngWrapper>
                 </s.sidebarBody>
             </s.sidebarWrapper>
         </>
