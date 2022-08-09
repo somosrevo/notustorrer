@@ -5,6 +5,7 @@ import ImageBackground from '../ImageBackground'
 import { Link } from "gatsby";
 import * as s from "./styles";
 import * as t from "../fontStyles";
+import {useTranslation} from 'react-i18next'
 
 export default function Sidebar(props) {
     const array = [
@@ -29,6 +30,9 @@ export default function Sidebar(props) {
             icon: <BsFillTelephoneFill size={20} color={"#444"} />
         }
     ]
+
+    const translator = useTranslation()
+
     return (
         <>
             <s.sidebarOverlay showSidebar={props.showSidebar} onClick={props.onClick} />
@@ -46,7 +50,7 @@ export default function Sidebar(props) {
                         <s.sidebarLink>
                         <Link to={array.link}>
                             {array.icon}
-                            <t.h5 mgBottom={"0"} >{array.nome}</t.h5>
+                            <t.h5 mgBottom={"0"} >{translator.t(array.nome)}</t.h5>
                         </Link>
                     </s.sidebarLink>
                     ))}

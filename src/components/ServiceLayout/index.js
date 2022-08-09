@@ -3,13 +3,14 @@ import React from "react";
 import * as s from './styles'
 import * as t from '../fontStyles'
 import ServiceBox from "../ServiceBox";
+import {useTranslation, Trans} from 'react-i18next'
 
 export default function ServiceLayout(){
     const services = [
         {
             id: 1,
             idImg: 1,
-            title: "Fornecimento de <span>Estações Anemométricas</span> ",
+            title: "Fornecimento de <span>Estações Anemométricas</span>",
             description: "Fabricação e fornecimento de torres treliçadas, galvanizadas a fogo, com alturas em até 130 metros. Fornecimento de todos os sensores, bem como sistemas de aquisição de dados"
         },
         {
@@ -56,9 +57,13 @@ export default function ServiceLayout(){
         },
     ]
 
+    const translator = useTranslation()
+
     return(
         <s.servicesLayout>
-            <t.h1 mgBottom={"3rem"} >Nossos <span>Serviços</span></t.h1>
+            <t.h1 mgBottom={"3rem"} >
+                <Trans components={{span: <span/>}} >Nossos Serviços</Trans>
+            </t.h1>
             {services.map((service) => (<ServiceBox id={service.id} idImg={service.idImg} title={service.title} description={service.description} />))}
         </s.servicesLayout>
     )

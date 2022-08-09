@@ -1,9 +1,11 @@
 import React from "react";
-
+import {Link} from 'gatsby'
 import * as s from "./styles";
+import * as t from '../fontStyles'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { StaticImage } from "gatsby-plugin-image";
 import i18n from "../../i18n";
+import {useTranslation} from 'react-i18next'
 
 export default function Header(props) {
     const array = [
@@ -45,6 +47,8 @@ export default function Header(props) {
         i18n.changeLanguage(e.target.value)
     }
 
+    const translator = useTranslation()
+
     return (
         <s.headerWrapper colorChanger={props.colorChanger} scrollPosition={scrollPosition}>
             <s.headerBody>
@@ -54,7 +58,7 @@ export default function Header(props) {
                 <s.gridHeader>
                     {array.map((page) => (
                         <Link to={page.link} >
-                            <t.p color="#fff" mgBottom={"0"} > {page.nome} </t.p>
+                            <t.p color="#fff" mgBottom={"0"} > {translator.t(page.nome)} </t.p>
                         </Link>
                     ))}
                 </s.gridHeader>

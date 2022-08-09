@@ -9,16 +9,18 @@ import "swiper/css";
 import * as s from "./styles";
 import * as t from "../fontStyles";
 import { StaticImage } from "gatsby-plugin-image";
+import {useTranslation, Trans} from 'react-i18next'
 
 import ImageBackground from "../ImageBackground";
 
 export default function Customers() {
+    const translator = useTranslation()
     return (
         <s.customers>
             <ImageBackground selectedImg={1} top={"13%"} left={"-50%"} width={"200%"} />
             <s.horizontalPadding>
                 <t.h1 textAlign={"center"}>
-                    Nossos <span>clientes</span>
+                    <Trans components={{span: <span/>}} >customers</Trans>
                 </t.h1>
             </s.horizontalPadding>
             <s.swiperWrapper>

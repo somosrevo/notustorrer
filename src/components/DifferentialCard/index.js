@@ -6,6 +6,8 @@ import { Link } from "gatsby";
 import * as t from "../fontStyles";
 import * as s from "./styles";
 
+import {useTranslation} from 'react-i18next'
+
 export default function DifferentialCard(props) {
     function imgSelect() {
         switch (props.idImg) {
@@ -34,6 +36,9 @@ export default function DifferentialCard(props) {
                 return <StaticImage src="../../images/services/cert.jpg" />;
         }
     }
+
+    const translator = useTranslation()
+
     return (
         <s.cardWrapper>
             <Link to={props.link} >
@@ -42,7 +47,9 @@ export default function DifferentialCard(props) {
                     <BsCheckCircleFill size={40} color="#27AE60" />
                 </s.styleIcon>
                 <s.cardPanel>
-                    <t.h5 mgBottom={"0"} weight={600}>{props.title}</t.h5>
+                    <t.h5 mgBottom={"0"} weight={600}>
+                        {translator.t(props.title)}
+                    </t.h5>
                 </s.cardPanel>
             </Link>
         </s.cardWrapper>
