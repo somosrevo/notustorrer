@@ -28,6 +28,8 @@ export default function Header(props) {
     ]
 
     const [scrollPosition, setScrollPosition] = React.useState(0);
+    const [choosedLang, setChoosedLang] = React.useState('pt-br')
+
     const handleScroll = () => {
         const position = window.scrollY;
         setScrollPosition(position);
@@ -43,12 +45,13 @@ export default function Header(props) {
     }, [scrollPosition]);
 
     const onChange = (e) => {
-        console.log(e.target.value)
-        i18n.changeLanguage(e.target.value)
+        localStorage.setItem('choosedLang', e.target.value)
+        setChoosedLang(localStorage.getItem('choosedLang'))
+        i18n.changeLanguage(localStorage.getItem('choosedLang'))
     }
-
+    
     const translator = useTranslation()
-
+    
     return (
         <s.headerWrapper colorChanger={props.colorChanger} scrollPosition={scrollPosition}>
             <s.headerBody>
