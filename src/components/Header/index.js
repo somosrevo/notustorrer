@@ -22,7 +22,7 @@ export default function Header(props) {
             nome: "Serviços",
         },
         {
-            link: "/",
+            link: "#footer",
             nome: "Contato",
         },
     ];
