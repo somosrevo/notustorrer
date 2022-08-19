@@ -29,6 +29,7 @@ export const closeIcon = styled.div`
     right: -50px;
     top: 40px;
     display: ${(props) => (props.showSidebar ? "block" : "none")};
+    cursor: pointer;
 `;
 
 export const sidebarBody = styled.div`

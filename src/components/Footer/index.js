@@ -9,7 +9,7 @@ import {useTranslation} from 'react-i18next'
 export default function Footer() {
     const translator = useTranslation()
     return (
-        <s.footerWrapper>
+        <s.footerWrapper id="footer">
             <s.footerLogo>
                 <StaticImage src="../../images/notustorrebranco.png" height={60} />
             </s.footerLogo>
