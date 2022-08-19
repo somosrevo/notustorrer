@@ -30,6 +30,7 @@ export const toggleSidebarBtn = styled.div`
     display: flex;
     border: 1px solid #fff;
     border-radius: 8px;
+    cursor: pointer;
 `
 
 export const gridHeader = styled.div`

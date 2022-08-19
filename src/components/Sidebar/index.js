@@ -26,7 +26,7 @@ export default function Sidebar(props) {
             icon: <BsGearFill size={20} color={"#444"} />
         },
         {
-            link: "/",
+            link: "#footer",
             nome: "Contato",
             icon: <BsFillTelephoneFill size={20} color={"#444"} />
         }
@@ -57,7 +57,7 @@ export default function Sidebar(props) {
 
                     {array.map((array) => (
                         <s.sidebarLink>
-                        <Link to={array.link}>
+                        <Link to={array.link} onClick={props.onClick}>
                             {array.icon}
                             <t.h5 mgBottom={"0"} >{translator.t(array.nome)}</t.h5>
                         </Link>
