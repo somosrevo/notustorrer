@@ -24,7 +24,7 @@ export default function Customers() {
                 </t.h1>
             </s.horizontalPadding>
             <s.swiperWrapper>
-                <Swiper spaceBetween={50} slidesPerView={4} breakpoints={{1199:{slidesPerView: 4}}} autoplay={{ delay: 0, disableOnInteraction: false }} speed={2000} loop={true} freeMode={true} modules={[Autoplay, FreeMode]}>
+                <Swiper spaceBetween={30} slidesPerView={4} breakpoints={{1199:{slidesPerView: 4}}} autoplay={{ delay: 0, disableOnInteraction: false }} speed={2000} loop={true} freeMode={true} modules={[Autoplay, FreeMode]}>
                     <SwiperSlide>
                         <StaticImage src="../../images/c1.png" />
                     </SwiperSlide>
@@ -36,12 +36,36 @@ export default function Customers() {
                     </SwiperSlide>
                     <SwiperSlide>
                         <StaticImage src="../../images/c4.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c5.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c6.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c7.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c8.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c9.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c10.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c11.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c12.png" />
                     </SwiperSlide>
                 </Swiper>
             </s.swiperWrapper>
             <s.swiperWrapper>
-                <Swiper spaceBetween={50} slidesPerView={4} breakpoints={{1199:{slidesPerView: 4}}} autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true }} speed={2000} loop={true} loopAdditionalSlides={10} freeMode={true} modules={[Autoplay, FreeMode]}>
-                    <SwiperSlide>
+                <Swiper spaceBetween={30} slidesPerView={4} breakpoints={{1199:{slidesPerView: 4}}} autoplay={{ delay: 0, disableOnInteraction: false, reverseDirection: true }} speed={2000} loop={true} loopAdditionalSlides={10} freeMode={true} modules={[Autoplay, FreeMode]}>
+                <SwiperSlide>
                         <StaticImage src="../../images/c1.png" />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -52,6 +76,30 @@ export default function Customers() {
                     </SwiperSlide>
                     <SwiperSlide>
                         <StaticImage src="../../images/c4.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c5.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c6.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c7.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c8.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c9.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c10.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c11.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c12.png" />
                     </SwiperSlide>
                 </Swiper>
             </s.swiperWrapper>

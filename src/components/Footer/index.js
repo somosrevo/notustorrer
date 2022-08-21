@@ -47,8 +47,8 @@ export default function Footer() {
                         {translator.t('Redes Sociais')}
                     </t.h5>
                     <s.iconsWrapper>
-                        <BsInstagram color="#fff" size={40} />
-                        <BsLinkedin color="#fff" size={40} />
+                        <a href="https://www.instagram.com/notustorres/"><BsInstagram color="#fff" size={40} /></a>
+                        <a href="https://www.linkedin.com/company/notustorres/"><BsLinkedin color="#fff" size={40} /></a>
                     </s.iconsWrapper>
                 </div>
             </s.footerGrid>
