@@ -61,6 +61,21 @@ export default function Customers() {
                     <SwiperSlide>
                         <StaticImage src="../../images/c12.png" />
                     </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c15.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c16.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c17.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c18.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c19.png" />
+                    </SwiperSlide>
                 </Swiper>
             </s.swiperWrapper>
             <s.swiperWrapper>
@@ -100,6 +115,21 @@ export default function Customers() {
                     </SwiperSlide>
                     <SwiperSlide>
                         <StaticImage src="../../images/c12.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c15.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c16.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c17.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c18.png" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <StaticImage src="../../images/c19.png" />
                     </SwiperSlide>
                 </Swiper>
             </s.swiperWrapper>
