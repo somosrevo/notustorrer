@@ -1,7 +1,9 @@
 module.exports = {
     siteMetadata: {
-        title: `notustorres`,
-        siteUrl: `https://www.yourdomain.tld`,
+        title: `Nótus Torres`,
+        siteUrl: `https://www.notustorres.com.br`,
+        description: `Fornecimento de Torres de Medições anemométricas e solarimétricas`,
+        image: `/notustorreslogo.png`,
     },
     plugins: [
         "gatsby-plugin-styled-components",
@@ -12,7 +14,7 @@ module.exports = {
             },
         },
         "gatsby-plugin-image",
-        "gatsby-plugin-react-helmet",
+        
         "gatsby-plugin-sitemap",
         "gatsby-plugin-mdx",
         "gatsby-plugin-sharp",

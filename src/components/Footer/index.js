@@ -31,7 +31,7 @@ export default function Footer() {
                         {translator.t('Telefone')}
                     </t.h5>
                     <t.p color={"#fff"} mgBottom={"3rem"}>
-                        +55 85 3393.5680
+                        +55 85 2139-0358
                     </t.p>
                 </div>
                 <div>
@@ -39,7 +39,7 @@ export default function Footer() {
                         Email
                     </t.h5>
                     <t.p color={"#fff"} mgBottom={"3rem"}>
-                        atendimento@notustorres.com.br
+                        comercial@notustorres.com.br
                     </t.p>
                 </div>
                 <div>

@@ -12,3 +12,5 @@ const ServicesPage = () => {
 }
 
 export default ServicesPage
+
+export const Head = () => <title>Nótus Torres - Serviços</title>

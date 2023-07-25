@@ -15,3 +15,5 @@ export default function AboutPage() {
         </main>
     );
 }
+
+export const Head = () => <title>Nótus Torres - Sobre</title>
