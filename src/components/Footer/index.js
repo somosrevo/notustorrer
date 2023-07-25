@@ -23,7 +23,7 @@ export default function Footer() {
                         {translator.t('Endereço')}
                     </t.h5>
                     <t.p color={"#fff"} mgBottom={"3rem"}>
-                        R. José Cândido de Oliveira, 51 - Jacundá, Aquiraz - CE, 61700-000
+                        CE-040, 51 - Jacundá, Aquiraz - CE, 61700-00
                     </t.p>
                 </div>
                 <div>
